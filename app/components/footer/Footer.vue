@@ -4,26 +4,39 @@
       <div class="footer__content">
         <div class="footer__content-left">
           <p class="footer__content-left-title">Получить консультацию</p>
-          <PForm :model:="form" :rules="rules" @submit.prevent="onSubmit">
+          <form @submit.prevent="onSubmit">
             <div class="footer__content-left-wrapper">
-              <PFormField name="name" label="Имя" required>
-                <PInputText
-                  v-model="form.name"
-                  placeholder="Введите ваше имя"
-                />
-              </PFormField>
+              <PInputText
+                v-model="name"
+                placeholder="Введите ваше имя"
+                required
+                autocomplete="off"
+              />
 
-              <PFormField name="email" label="Email" required>
-                <PInputText
-                  v-model="form.email"
-                  type="email"
-                  placeholder="Введите ваш email"
-                />
-              </PFormField>
+              <PInputText
+                v-model="email"
+                type="email"
+                placeholder="your@email.com"
+                required
+                autocomplete="off"
+              />
+
+              <PInputMask
+                v-model="phone"
+                mask="+7 (999) 999-99-99"
+                placeholder="+7 (___) ___-__-__"
+                required
+                autocomplete="off"
+              />
             </div>
 
             <PButton type="submit" label="Отправить" />
-          </PForm>
+          </form>
+          <div v-if="isSuccess" class="footer__content-left-success">
+            <p class="footer__content-left-success-text">
+              Заявка успешно отправлена!
+            </p>
+          </div>
         </div>
         <div class="footer__content-right">
           <nav class="footer__content-right-nav">
@@ -74,20 +87,11 @@
 </template>
 
 <script lang="ts" setup>
-const rules = {
-  name: [{ required: true, message: 'Имя обязательно для заполнения' }],
-  email: [
-    { required: true, message: 'Email обязателен для заполнения' },
-    { type: 'email', message: 'Введите корректный email' },
-  ],
-}
-const form = ref({
-  name: '',
-  email: '',
-})
-const onSubmit = (data: any) => {
-  console.log('Форма отправлена:', data)
-  alert('Форма отправлена!')
+const { handleSubmit, name, phone, email, resetForm, isSuccess } = sendMail()
+
+const onSubmit = async () => {
+  await handleSubmit(email.value, phone.value, name.value)
+  resetForm()
 }
 </script>
 
@@ -145,7 +149,7 @@ const onSubmit = (data: any) => {
     }
     &-left {
       &-title {
-        margin-bottom: 40px;
+        margin-bottom: 20px;
         font-size: 22px;
         font-weight: 700;
         font-family: 'Onest';
@@ -155,7 +159,6 @@ const onSubmit = (data: any) => {
         }
         @media screen and (max-width: 900px) {
           font-size: 16px;
-          margin-bottom: 20px;
         }
       }
       &-wrapper {
@@ -163,6 +166,16 @@ const onSubmit = (data: any) => {
         flex-direction: column;
         gap: 10px;
         margin-bottom: 20px;
+      }
+      &-success {
+        &-text {
+          padding-top: 20px;
+          text-align: center;
+          font-size: 14px;
+          font-weight: 400;
+          font-family: 'Onest';
+          color: #00dc82;
+        }
       }
     }
     &-right {

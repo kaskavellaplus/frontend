@@ -13,6 +13,6 @@ export const headerNavigation = [
   },
   {
     title: 'Контакты',
-    link: '/',
+    link: '/contacts',
   },
 ];

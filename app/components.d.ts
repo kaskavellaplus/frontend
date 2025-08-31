@@ -11,7 +11,9 @@ declare module 'vue' {
     PButton: typeof import('primevue/button')['default']
     PForm: typeof import('@primevue/forms/form')['default']
     PFormField: typeof import('@primevue/forms/formfield')['default']
+    PInputMask: typeof import('primevue/inputmask')['default']
     PInputText: typeof import('primevue/inputtext')['default']
+    PTextarea: typeof import('primevue/textarea')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
   }

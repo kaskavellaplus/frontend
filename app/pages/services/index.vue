@@ -11,7 +11,7 @@
 </template>
 
 <script lang="ts" setup>
-import Service from '../components/services/Service.vue'
+import Service from '@/components/services/Service.vue'
 </script>
 
 <style></style>

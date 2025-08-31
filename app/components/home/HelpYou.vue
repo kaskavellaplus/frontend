@@ -9,7 +9,7 @@
       </div>
       <ul class="list-reset help__list">
         <li v-for="(item, index) in helpList" :key="index" class="help__item">
-          <NuxtLink to="/" class="help__item-link">
+          <NuxtLink :to="item.link" class="help__item-link">
             <img :src="item.bg" alt="img" class="help__item-img" />
             <h3 class="help__item-title">{{ item.title }}</h3>
             <img src="/img/arrow.png" alt="arrow" class="help__item-arrow" />

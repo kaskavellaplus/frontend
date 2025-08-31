@@ -25,12 +25,43 @@
           >info@kaskavellaplus.ru</a
         >
       </div>
-      <PButton>Получить консультацию</PButton>
+      <PButton @click="openPopup">Получить консультацию</PButton>
+
+      <Burger
+        :is-open="isMobileMenuOpen"
+        @toggle="toggleMobileMenu"
+        @close="closeMobileMenu"
+        @openPopup="openPopup"
+      />
     </div>
+    <PopUp :is-open="isPopupOpen" @close="closePopup" />
   </header>
 </template>
 
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+import PopUp from '../common/PopUp.vue'
+import Burger from '../common/Burger.vue'
+
+const isPopupOpen = ref(false)
+const isMobileMenuOpen = ref(false)
+
+const openPopup = () => {
+  isPopupOpen.value = true
+  isMobileMenuOpen.value = false
+}
+
+const closePopup = () => {
+  isPopupOpen.value = false
+}
+
+const toggleMobileMenu = () => {
+  isMobileMenuOpen.value = !isMobileMenuOpen.value
+}
+
+const closeMobileMenu = () => {
+  isMobileMenuOpen.value = false
+}
+</script>
 
 <style lang="scss" scoped>
 .header {
