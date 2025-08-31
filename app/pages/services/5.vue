@@ -1,7 +1,7 @@
 <template>
   <CommonHero
     title="Разработка нормативов образования отходов и лимитов их размещения"
-    bg="/img/hero-5.jpg"
+    bg="/img/hero-5.webp"
   />
   <section class="service">
     <div class="container service__bg">

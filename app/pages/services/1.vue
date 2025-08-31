@@ -1,7 +1,7 @@
 <template>
   <CommonHero
     title="Постановка на учет объектов негативного воздействия и актуализация сведений"
-    bg="/img/hero-5.jpg"
+    bg="/img/hero-5.webp"
   />
   <section class="service">
     <div class="container service__bg">

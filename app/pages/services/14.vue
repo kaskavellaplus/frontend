@@ -1,5 +1,5 @@
 <template>
-  <CommonHero title="Разработка проекта ЗСО" bg="/img/hero-5.jpg" />
+  <CommonHero title="Разработка проекта ЗСО" bg="/img/hero-5.webp" />
   <section class="service">
     <div class="container service__bg">
       <div class="service__content">

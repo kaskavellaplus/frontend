@@ -48,7 +48,7 @@
             </a>
           </div>
 
-          <PButton @click="openPopup">Получить консультацию</PButton>
+          <!-- <PButton @click="openPopup">Получить консультацию</PButton> -->
         </div>
       </div>
     </Transition>
@@ -77,11 +77,6 @@ const toggleMenu = () => {
 
 const closeMenu = () => {
   emit('close')
-}
-
-const openPopup = () => {
-  emit('openPopup')
-  closeMenu()
 }
 </script>
 

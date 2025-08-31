@@ -1,7 +1,7 @@
 <template>
   <CommonHero
     title="Раздел «Охрана окружающей среды» (ООС) / «Оценка воздействия на окружающую среду» (ОВОС)"
-    bg="/img/hero-5.jpg"
+    bg="/img/hero-5.webp"
   />
   <section class="service">
     <div class="container service__bg">

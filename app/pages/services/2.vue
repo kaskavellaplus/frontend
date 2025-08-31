@@ -1,7 +1,7 @@
 <template>
   <CommonHero
     title="Проведение инвентаризации источников выбросов загрязняющих веществ в атмосферный воздух и разработка отчета по инвентаризации"
-    bg="/img/hero-5.jpg"
+    bg="/img/hero-5.webp"
   />
   <section class="service">
     <div class="container service__bg">
