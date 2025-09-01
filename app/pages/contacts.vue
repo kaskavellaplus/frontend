@@ -89,7 +89,32 @@
   </div>
 </template>
 
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+useHead({
+  title: 'KaskavellaPlus - Контакты',
+  meta: [
+    {
+      name: 'description',
+      content:
+        'Компания KaskavellaPlus предлагает полный спектр экологических услуг: от аудита и разработки документации до получения разрешений и сопровождения проверок. Наша команда экспертов поможет вашему предприятию работать в соответствии с природоохранным законодательством и внедрить экологически безопасные технологии.',
+    },
+    {
+      property: 'og:title',
+      content: 'KaskavellaPlus - Контакты',
+    },
+    {
+      property: 'og:description',
+      content:
+        'Компания KaskavellaPlus предлагает полный спектр экологических услуг: от аудита и разработки документации до получения разрешений и сопровождения проверок. Наша команда экспертов поможет вашему предприятию работать в соответствии с природоохранным законодательством и внедрить экологически безопасные технологии.',
+    },
+    { property: 'og:type', content: 'website' },
+    { property: 'og:url', content: 'https://kaskavellaplus.ru/contacts' },
+    { property: 'og:site_name', content: 'KaskavellaPlus' },
+    { property: 'og:locale', content: 'ru_RU' },
+    { name: 'robots', content: 'index, follow' },
+  ],
+})
+</script>
 
 <style lang="scss" scoped>
 .contacts {

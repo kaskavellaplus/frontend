@@ -15,7 +15,7 @@ export const helpList = [
     title: 'Экологическая отчетность',
     bg: '/img/help-3.webp',
     description: 'Расчет показателей экологического воздействия на окружающую среду',
-    link: '/',
+    link: '/services/10',
   },
   {
     title: 'План мероприятий при НМУ',

@@ -26,7 +26,7 @@
 
 <style lang="scss" scoped>
 .partners {
-  padding: 20px 0;
+  padding: 20px 0 0 0;
   @media screen and (max-width: 1444px) {
     padding: 0 0;
   }
