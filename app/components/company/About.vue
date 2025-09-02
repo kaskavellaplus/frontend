@@ -2,10 +2,7 @@
   <section class="about">
     <div class="container about__bg">
       <div class="about__content">
-        <h2 class="about__title">
-          Компания с 2018 года разрабАтывает проекты и документы в сфере
-          экологии
-        </h2>
+        <h2 class="about__title">Наши специалисты более 30 лет на рынке.</h2>
         <p class="about__subtitle">Кто мы такие</p>
       </div>
       <div class="about__wrapper">

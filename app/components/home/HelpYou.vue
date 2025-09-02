@@ -19,7 +19,9 @@
           </NuxtLink>
         </li>
       </ul>
-      <NuxtLink to="/" class="help__link">Посмотреть все услуги</NuxtLink>
+      <NuxtLink to="/services" class="help__link"
+        >Посмотреть все услуги</NuxtLink
+      >
     </div>
   </section>
 </template>
@@ -76,7 +78,7 @@
     }
   }
   &__list {
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     display: grid;
     grid-template-columns: 300px 300px 300px;
     justify-content: flex-end;
@@ -194,7 +196,7 @@
     }
   }
   &__link {
-    display: block;
+    display: inline-block;
     text-align: right;
     font-size: 18px;
     font-weight: 400;

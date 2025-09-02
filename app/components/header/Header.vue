@@ -18,8 +18,11 @@
         </ul>
       </nav>
       <div class="header__contacts">
-        <a href="tel:+79161234567" class="header__contacts-link"
-          >+7 (916) 123-45-67</a
+        <a href="tel:+79166763566" class="header__contacts-link"
+          >8 (916) 676-35-66</a
+        >
+        <a href="tel:+79163817645" class="header__contacts-link"
+          >8 (916) 381-76-45</a
         >
         <a href="mailto:info@kaskavellaplus.ru" class="header__contacts-link"
           >info@kaskavellaplus.ru</a
@@ -107,7 +110,7 @@ const closeMobileMenu = () => {
     flex-direction: column;
     gap: 5px;
     &-link {
-      font-size: 16px;
+      font-size: 14px;
       font-weight: 700;
       font-family: 'Onest';
       color: #ffffff;

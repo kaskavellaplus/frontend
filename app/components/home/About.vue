@@ -19,10 +19,9 @@
           специфики и требований надзорных органов.
         </p>
         <p class="about__description">
-          Специализируемся на разработке проектов ПДВ, СЗЗ, ЗСО, ПНООЛР, НДС,
-          НМУ для предприятий всех отраслей. Наши проекты соответствуют
-          последним изменениям законодательства и требованиям экологической
-          безопасности.
+          Специализируемся на разработке проектов ПДВ, СЗЗ, ПНООЛР, НДВ, НМУ для
+          предприятий всех отраслей. Наши проекты соответствуют последним
+          изменениям законодательства и требованиям экологической безопасности.
         </p>
         <p class="about__description">
           Качество подтверждается положительными заключениями государственной
@@ -30,27 +29,18 @@
           органов.
         </p>
       </div>
-      <NuxtLink to="/" class="about__link">Узнать больше о компании</NuxtLink>
+      <NuxtLink to="/company" class="about__link"
+        >Узнать больше о компании</NuxtLink
+      >
       <ul class="list-reset about__list">
-        <li
-          v-for="(item, index) in aboutHome"
-          :key="index"
-          class="about__item"
-          :style="{
-            backgroundColor: item.backgroundColor || '#ffffff',
-            border: item.borderColor || '1px solid #d9d9d9',
-          }"
-        >
-          <NuxtLink :to="item.link || ''" class="about__item-link">
-            <h3 class="about__item-number">{{ item.number }}</h3>
-            <p
-              :style="{ color: item.color || '#000000' }"
-              :class="{ 'about__item-center': !item.number }"
-              class="about__item-text"
-            >
-              {{ item.description }}
-            </p>
-          </NuxtLink>
+        <li v-for="(item, index) in aboutHome" :key="index" class="about__item">
+          <h3 class="about__item-number">{{ item.number }}</h3>
+          <p
+            :class="{ 'about__item-center': !item.number }"
+            class="about__item-text"
+          >
+            {{ item.description }}
+          </p>
         </li>
       </ul>
     </div>
@@ -146,6 +136,7 @@
     font-weight: 400;
     font-family: 'Onest';
     color: #0066b3;
+    width: max-content;
     @media screen and (max-width: 900px) {
       font-size: 14px;
     }
@@ -175,6 +166,7 @@
     }
   }
   &__item {
+    border: 1px solid #d9d9d9;
     display: flex;
     flex-direction: column;
     justify-content: center;

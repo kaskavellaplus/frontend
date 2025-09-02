@@ -1,5 +1,9 @@
 export const headerNavigation = [
   {
+    title: 'Главная',
+    link: '/',
+  },
+  {
     title: 'Компания',
     link: '/company',
   },
@@ -7,10 +11,7 @@ export const headerNavigation = [
     title: 'Услуги',
     link: '/services',
   },
-  {
-    title: 'Кейсы',
-    link: '/',
-  },
+
   {
     title: 'Контакты',
     link: '/contacts',

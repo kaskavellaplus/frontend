@@ -19,11 +19,4 @@ export const aboutHome = [
     number: '401',
     description: 'положительных санитарно-эпидемиологических заключений',
   },
-  {
-    description: 'Сделанные нами работы',
-    link: '/',
-    backgroundColor: '#0066b3',
-    color: '#ffffff',
-    borderColor: '#0066b3',
-  },
 ];

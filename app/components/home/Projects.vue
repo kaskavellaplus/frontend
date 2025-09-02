@@ -10,9 +10,7 @@
           промышленности и социальной сфере. Делали проекты для школ, больниц,
           автомоек и даже аэропортов.
         </p>
-        <NuxtLink to="/" class="projects__link"
-          >Примеры наших проектов</NuxtLink
-        >
+
         <ul class="list-reset projects__list">
           <li
             v-for="(item, index) in projectHome"

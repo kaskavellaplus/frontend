@@ -60,9 +60,16 @@
             <p class="footer__content-right-contacts-title">Контакты</p>
             <li class="footer__content-right-contacts-item">
               <a
-                href="tel:+79161234567"
+                href="tel:+79166763566"
                 class="footer__content-right-contacts-link"
-                >+7 (916) 123-45-67</a
+                >8 (916) 676-35-66</a
+              >
+            </li>
+            <li class="footer__content-right-contacts-item">
+              <a
+                href="tel:+79163817645"
+                class="footer__content-right-contacts-link"
+                >8 (916) 381-76-45</a
               >
             </li>
             <li class="footer__content-right-contacts-item">

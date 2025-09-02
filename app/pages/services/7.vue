@@ -1,8 +1,5 @@
 <template>
-  <CommonHero
-    title="Постановка на учет объектов негативного воздействия и актуализация сведений"
-    bg="/img/hero-5.webp"
-  />
+  <CommonHero title="Расчет выбросов парниковых газов" bg="/img/hero-5.webp" />
   <section class="service">
     <div class="container service__bg">
       <h2 class="service__title">Основание</h2>

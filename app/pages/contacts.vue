@@ -23,8 +23,11 @@
               </svg>
             </div>
             <h3 class="contacts__card-title">Телефон</h3>
-            <a href="tel:+79161234567" class="contacts__link"
-              >+7 (916) 123-45-67</a
+            <a href="tel:+79166763566" class="contacts__link"
+              >8 (916) 676-35-66</a
+            >
+            <a href="tel:+79163817645" class="contacts__link"
+              >8 (916) 381-76-45</a
             >
             <p class="contacts__card-description">Звоните нам</p>
           </div>
@@ -63,7 +66,7 @@
               </svg>
             </div>
             <h3 class="contacts__card-title">Адрес</h3>
-            <p class="contacts__address">г. Москва, ул. Ленина, 1</p>
+            <p class="contacts__address">Москва Саморы Машела 4 к 1</p>
             <p class="contacts__card-description">Адрес офиса компании</p>
           </div>
 
@@ -219,6 +222,9 @@ useHead({
     transition: color 0.3s ease;
     @media screen and (max-width: 1200px) {
       font-size: 16px;
+    }
+    @media screen and (max-width: 900px) {
+      font-size: 14px;
     }
     &:hover {
       color: #0056b3;
