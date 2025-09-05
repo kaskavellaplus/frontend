@@ -32,6 +32,11 @@
 
             <PButton type="submit" label="Отправить" />
           </form>
+          <div class="footer__content-left-agreement">
+            Нажимая на кнопку, вы даёте согласие на обработку персональных
+            данных, указанных в форме обратной связи, Оператору в целях
+            коммуникации со мной.
+          </div>
           <div v-if="isSuccess" class="footer__content-left-success">
             <p class="footer__content-left-success-text">
               Заявка успешно отправлена!
@@ -183,6 +188,16 @@ const onSubmit = async () => {
           font-family: 'Onest';
           color: #00dc82;
         }
+      }
+      &-agreement {
+        font-size: 14px;
+        font-weight: 400;
+        font-family: 'Onest';
+        color: #ffffff;
+        padding-top: 10px;
+      }
+      @media screen and (max-width: 1200px) {
+        font-size: 12px;
       }
     }
     &-right {

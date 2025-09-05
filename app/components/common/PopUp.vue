@@ -53,6 +53,11 @@
               <button type="submit" class="popup__submit">
                 <span class="popup__submit-text">Отправить заявку</span>
               </button>
+              <div class="popup__form-agreement">
+                Нажимая на кнопку, вы даёте согласие на обработку персональных
+                данных, указанных в форме обратной связи, Оператору в целях
+                коммуникации со мной.
+              </div>
             </form>
             <div v-if="isSuccess" class="popup__success">
               <p class="popup__success-text">Заявка успешно отправлена!</p>
@@ -306,6 +311,19 @@ const closePopup = () => {
   font-size: 14px;
   font-weight: 400;
   color: #077b35;
+}
+.popup__form-agreement {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: 'Onest';
+  color: #054263;
+  padding-top: 10px;
+  text-align: center;
+}
+@media screen and (max-width: 900px) {
+  .popup__form-agreement {
+    font-size: 12px;
+  }
 }
 .popup-enter-active,
 .popup-leave-active {
